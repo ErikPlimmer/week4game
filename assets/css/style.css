@@ -1,0 +1,69 @@
+
+.jumbotron{
+	background-color: 	#E0FFFF;
+}
+
+.instructions {
+	color: red;
+}
+.text-left {
+
+
+}
+
+
+
+.text-center {
+	color: black;
+}
+
+#bismuth {
+	width: 200px;
+	height: 200px;
+	float: left;
+
+}
+
+#lapis {
+	width: 200px;
+	height: 200px;
+	float: left;
+
+}
+
+#peridot {
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+#smokey {
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+.panel-primary {
+	width: 900px;	
+
+}
+
+.score {
+
+}
+
+#number {
+	text-align: center;
+}
+footer { 
+	font-size: 18px;
+	text-align: center;
+	max-width: 100%;
+	bottom: 0px;
+	left: 0px;
+	border-width: 5px 0px 0px 0px;
+	border: solid;
+	border-color: grey;
+	background-color: grey;
+	color: white;
+ }

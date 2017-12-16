@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Game</title>
+<!-- bootstrap link -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!-- css links -->
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<!-- awesome fonts link-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- jquery links -->
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- javascript links -->
+<script src="assets/javascript/game.js"></script>
+<!-- google font link -->
+
+</head>
+
+<body>
+<div class="container">
+
+	<div class="jumbotron">
+      <h1 class="text-center"><strong>Crystal Collector</strong></h1>
+      <h4 class="text-center"><ul></ul></h4>
+      <hr>
+    </div><!--jumbotron end-->
+
+	<!--first row-->
+	<div class="row">
+		<div class="row">
+      <!-- Left Panel -->
+      <div class="col-lg-2"></div>
+      <div class="col-lg-7">
+
+        <!-- Instructions -->
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title instructions">Instructions</h3>
+          </div><!--panel heading end-->
+          <div class="panel-body">
+            <div class="text-left">
+             <ul>
+             	<li>You are given a random number below try to solve this puzzle.</li>
+             	<br>
+				<li>First objective is to click the crystal images to find their vaule.</li>
+				<br>
+             	<li>Using crystal values try to reach the value of the random number without going over.</li>
+             	<br>
+             	<li>Each new round the values of crystals is random.</li>
+             </ul>
+            </div><!--text-left end-->
+          </div><!--panel body end-->
+        </div><!-- info panel end-->
+		</div>
+	  </div>
+	</div> <!--first row end--> 
+
+
+
+    <div class="row"><!--second row-->
+
+      <!-- Left Panel -->
+            <div class="col-lg-2"></div>
+     <div class="col-lg-7">
+		
+      	<!--Random number-->
+      	<div class="panel panel-danger">
+ 				<div class="panel-heading">
+            		<h3 class="panel-title text-center">Solve this puzzle!</h3>
+          		</div><!--panel heading end-->
+          	<div class="panel-body">
+          			<p id="number"></p>
+           
+          	</div><!--panel body end-->
+		</div> <!-- panel danger end -->	
+
+	  </div><!--solum end-->
+	</div><!--second row-->
+        
+
+
+	<div class="row"><!--thrid row-->
+      <!-- Left Panel -->
+      <div class="col-lg-1"></div>      
+      	<div class="col-lg-7">
+      		
+
+      	<!--Crystals-->
+      		<div class="panel panel-primary">
+ 				<div class="panel-heading">
+            		<h3 class="panel-title text-center">Crystals</h3>
+          		</div><!--panel heading end-->
+          			<div class="panel-body">
+            			<div><img id="bismuth" src="assets/images/bismuth.jpg"></div>
+            			<div><img id="lapis" src="assets/images/lapis.jpg"></div>
+            			<div><img id="peridot" src="assets/images/peridot.jpg"></div>
+            			<div><img id="smokey" src="assets/images/smokey.jpg"></div><!--Crystal images-->
+          			</div><!--panel body end-->
+			</div> <!--panel primary end -->	
+	  	</div><!--colum end-->
+	</div><!--thrid row end-->
+		
+    <div class="row"><!--fourth row-->
+
+      	<!-- Left Panel -->
+      <div class="col-lg-2"></div>      	
+      	<div class="col-lg-7">
+
+      		<div class="panel panel-info"><!--score-->
+      			<div class="panel-heading">
+      			<h3 class="panel-title text-center">Score</h3>
+			</div>
+		  		<div class="panel-body">
+		  				<div class="score"></div>
+		  				<div id= "wins"></div>
+		  				<div id= "losses"></div>
+
+	  			</div><!--panel body end-->
+		</div><!--colum end-->	  	
+
+	</div><!--fourth row end-->
+
+
+      	
+	
+</div> <!--main container-->
+
+
+</body>
+
+</footer> 
+		<footer><i class="fa fa-copyright" aria-hidden="true"></i>
+		Erik Plimmer
+		</footer>
+
+ 
+</html>
