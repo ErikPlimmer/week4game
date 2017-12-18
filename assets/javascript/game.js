@@ -1,90 +1,99 @@
 // global varibles 
 var randomNumber = 0;
+
 var wins = 0;
 
 var losses = 0;
 
 var counter = 0;
 
-numberOptions = ["1", "10", "15", "20"];
-// functions 
+bismuthNumber = [3, 8];
 
+lapisNumber  = [1, 12, 7, 9];
+
+peridotNumber = [10, 11, 2];
+
+smokeyNumber = [1, 5, 6];
+
+var score = 0;
+// functions 
+//==================================================================================
  
 
 // Random number 
+//==================================================================================
 $(document).ready(function() {
   randomNumber = Math.floor((Math.random() * 120) + 12);
+
    $("#number").append(randomNumber);
 
- // $("#random-number").append(randomNumber);
-								
- // document.querySelector("#number").innerHTML = "solve: " + randomNumber + "<br>"; 
 
- for (var i = 0; i < numberOptions.length; i++) {
- 	$("#bismuth" + numberOptions[i]);
-}
+var bismuth = bismuthNumber[Math.floor(Math.random() * bismuthNumber.length)];
+
+var lapis = lapisNumber[Math.floor(Math.random() * lapisNumber.length)];
+
+var peridot = peridotNumber[Math.floor(Math.random() * peridotNumber.length)];
+
+var smokey = smokeyNumber[Math.floor(Math.random() * smokeyNumber.length)];
+
+console.log("bismuth is " , bismuth);
+console.log("lapis is ", lapis);
+console.log("smokey is ",smokey);
+console.log("peridot is ",peridot);
+
+
+
 
   //bismuth crystal counter function
   $("#bismuth").on("click", function() {
 
-    // Each time the user clicks the bismuth crystal the counter goes up.
-      
     // imageCrystal.attr("data-crystalvalue", numberOptions[i]);
- counter += ("#bismuth");
+  counter =+ bismuth;
     // counter += Math.floor((Math.random() * 3) + 1);
     $(".score").append(counter);
-   								 console.log(counter);
+   								 
+
     // We then output the number of times the crystal is clicked.
     alert("You clicked this crystal " + counter + " times!");
     							
 
-  });
+  }); // bismuth function end 
 
   	//lapis crystal counter function
     $("#lapis").on("click", function() {
 
     // Each time the user clicks the bismuth crystal the counter goes up.
-
-    // counter += Math.floor((Math.random() * 3) + 1);
-    $(".score").append(counter);
+  counter += lapis;
+ 
+    $(".score").append(lapis);
     // We then output the number of times the crystal is clicked.
-    alert("You clicked this crystal " + counter + " times!");
+    alert("You clicked this crystal " + lapis + " times!");
     									
-  });
+  }); // lapis function end 
 
     //peridot crystal counter function
       $("#peridot").on("click", function() {
 
     // Each time the user clicks the bismuth crystal the counter goes up.
 
-    // counter += Math.floor((Math.random() * 3) + 1);
-    $(".score").append(counter);
+
+    $(".score").append(peridot);
     // We then output the number of times the crystal is clicked.
-    alert("You clicked this crystal " + counter + " times!");
+    alert("You clicked this crystal " + peridot + " times!");
     									
-  });
+  }); // peridot function end 
 
   //smokey quarts crystal counter function
   $("#smokey").on("click", function() {
-  	$(".score").append(counter);
+
     // Each time the user clicks the bismuth crystal the counter goes up.
 
-    // counter += Math.floor((Math.random() * 3) + 1);
-    										console.log("smokey is ",counter);
+    $(".score").append(smokey);
+    									
     // We then output the number of times the crystal is clicked.
-    alert("You clicked this crystal " + counter + " times!");
+    alert("You clicked this crystal " + smokey + " times!");
 
-  });
+  }); // smokey function end
+console.log("counter is ", counter);
+}); // main function end
 
-});
-
-
-// console.log("random number" ,randomNumber);
-// console.log("bismuth is", counter);
-// console.log("lapis is ", counter);
-// console.log("peridot is" counter);
-
-
-
- // 	document.querySelector("#wins").innerHTML = "Wins: " + wins + "<br><br><br><br>";
-	// document.querySelector("#losses").innerHTML = "Losses: " + losses + "<br><br><br><br>";
