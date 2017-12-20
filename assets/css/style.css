@@ -1,6 +1,10 @@
 
 .jumbotron{
 	background-color: 	#E0FFFF;
+	font-family: font-family: 'Berkshire Swash', cursive;
+}
+.jumbo {
+	font-family: 'Berkshire Swash', cursive;
 }
 
 .instructions {
@@ -13,6 +17,15 @@
 	font-size: 20px;
 }
 
+.crystal {
+	font-size: 20px
+	font-family: font-family: 'Risque', cursive;
+
+}
+.score {
+	color: red;
+	
+}
 #bismuth {
 	width: 200px;
 	height: 200px;

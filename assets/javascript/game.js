@@ -56,14 +56,14 @@ function checkWin(){
       wins++;
   $("#wins").html("Wins:" + " " + wins);
   
-    alert("You won. Starting new game");
+    alert("You won! Starting new game");
     startGame();
 }
 
     else if(counter > randomNumber) {
       losses++;
    $("#losses").html("Losses:" + " " + losses);
-    alert("You loser. Starting new game");
+    alert("You lost... Starting new game");
     startGame();
 }
 
