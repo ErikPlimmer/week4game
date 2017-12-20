@@ -5,30 +5,24 @@
 
 .instructions {
 	color: red;
+	font-size: 20px;
 }
-.text-left {
-
-
-}
-
-
 
 .text-center {
 	color: black;
+	font-size: 20px;
 }
 
 #bismuth {
 	width: 200px;
 	height: 200px;
 	float: left;
-
 }
 
 #lapis {
 	width: 200px;
 	height: 200px;
 	float: left;
-
 }
 
 #peridot {
@@ -48,13 +42,11 @@
 
 }
 
-.score {
-
-}
 
 #number {
 	text-align: center;
 }
+
 footer { 
 	font-size: 18px;
 	text-align: center;
